@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Beautiful CSS-HTML Form</title>
+</head>
+
+<body>
+<font size="+2"><b>Form Registrasi Sederhana (Dengan Berbagai Contoh Input)</b></font>
+<br /><br />
+
+<form action="proses.php">
+
+<table>
+
+<tr>
+<td id="indeks"><label for="nama"><b>Nama</b></label></td>
+<td><input type="text" name="nama" /></td>
+</tr>
+<tr>
+<td id="indeks"><label for="tgllahir"><b>Tanggal Lahir </b></label></td>
+<td><input type="text" name="tgllahir" /></td>
+</tr>
+<tr>
+<td id="indeks"><label for="alamat"><b>Alamat</b> </label></td>
+<td><input type="text" name="alamat" /></td>
+</tr>
+<tr>
+<td id="indeks"><label for="email"><b>Email</b> </label></td>
+<td><input type="text" name="email" /></td>
+</tr>
+<tr>
+<td id="indeks"><label for="password"><b>Password </b></label></td>
+<td><input type="password" name="pin" maxlength="20" size="20"/></td>
+</tr>
+<tr>
+<td id="indeks"><label for="kelamin"><b>Jenis Kelamin</b></label> </td>
+<td><input type="radio" name="kelamin" value="Laki-Laki"/><label for="Laki-Laki">Laki-Laki</label>
+<input type="radio" name="kelamin" value="Perempuan" /><label for="Perempuan">Perempuan</label></td>
+</tr>
+<tr>
+<td id="indeks"><label for="minat"><b>Minat </b></label></td>
+<td><input type="checkbox" name="minat" /><label for="politik">Politik</label><br />
+<input type="checkbox" name="minat" /><label for="hiburan">Hiburan</label><br />
+<input type="checkbox" name="minat" /><label for="sejarah">Sejarah</label><br />
+<input type="checkbox" name="minat" /><label for="olahraga">Olahraga</label><br />
+<input type="checkbox" name="minat" /><label for="teknologi">Teknologi</label>
+</td>
+</tr>
+<tr>
+<td id="indeks"><label for="pendidikan"><b>Pendidikan Terakhir </b></label></td>
+<td>
+<select name="pendidikan">
+<option>SD</option>
+<option>SMP</option>
+<option>SMA</option>
+<option>S1</option>
+<option>S2</option>
+<option>S3</option>
+</select>
+</td>
+</tr>        
+<tr>
+<td id="indeks"><label for="file"><b>Upload Foto </b></label></td>
+<td><input type="file" name="picture" id="picture" accept="image/jpeg, image/gif"/></td>
+</tr>      
+</table>  
+
+</form>
+</body>
+</html>
