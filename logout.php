@@ -5,9 +5,9 @@ session_destroy();
 /*
 // if the user is logged in, unset the session
 
-if (isset($_SESSION['logged-mhs-in'])) {
+if (isset($_SESSION['logged-in'])) {
 
-unset($_SESSION['logged-mhs-in']);
+unset($_SESSION['logged-in']);
 
 }*/
 

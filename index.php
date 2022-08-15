@@ -1,22 +1,21 @@
 <?php
 	session_start();
 	
-	if (isset($_SESSION['NIM_MHS'])) 
+	if (isset($_SESSION['USERNAME'])) 
 	{
 		
-		header('Location: user_homepage.php');
+		header('Location: admin_homepage.php');
 	}
 ?>
 
 <html>
 <title>
-		User Login Page
+		Admin Login Page
 	</title>
 <head>
 <script language="javascript" type="text/javascript" src="niceforms.js"></script>
 <link rel="stylesheet" type="text/css" media="all" href="css/niceforms-default.css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
 
 <body>
@@ -29,32 +28,32 @@
 			</div>
 		</div>
 		<!-- End Logo + Top Nav -->
+<br><br><br><br><br><br><br><br><br>
 <div id="headerlogin">
 
 	<div class="header_login">
    
     </div>
-    <br><br><br><br><br><br><br><br><br>
 <div class="login_form">
 <center><table >
 <tr align='center'>
-	<td height='20px'><font face='Verdana' size='4' color='#a7432b' align='center'>---LOGIN MAHASISWA---</td>
+	<td height='20px'><font face='Verdana' size='4' color='#a7432b' align='center'>---LOGIN ADMIN---</td>
 </tr>
 <tr>
 	<td>
-		<form class="niceform" name='LOGIN' method='post' action="userValidate.php">
+		<form class="niceform" name='LOGIN' method='post' action="adminValidate.php">
 		<table border=0>
 		<tr>
 			<td width='90px'><label>Username: </label></td>
 			<td>
-				<input size="35" type='text' name='NIM' >
+				<input size="35" type='text' name='USERNAME' >
 			</td>
 		</tr>
 		<br>
 		<tr>
 			<td><label>Password:</label> </td>
 			<td>
-				<input size="35" type='password' name='PASSWORD'>
+				<input size="35" type='password' name='PASSWORD_ADMIN'>
 			</td>
 		</tr>
 		<tr>
@@ -68,7 +67,7 @@
 </table></center>
          </div>  
 </div>	
-         </div>  
+</div>  
 </div>	
 <?php
     if(isset($_SESSION['kosong']))
