@@ -1,12 +1,29 @@
-<HTML>
-	<HEAD>
-		<TITLE> Penggunaan Link </TITLE>
+<HTML> 
+	<HEAD> 
+		<TITLE> Link Pseudo Class </TITLE> 
+		<style>
+			<!-- CSS -->
+			a:link {color: blue;} 
+			a:visited {color: red;} 
+			a:hover {color: white;}
+			a:active {color: yellow;}
+			  
+			.header {
+			  padding: 10px 10px 10px 10px;
+			  background-color: #33090D;
+			  color: white;
+			}
+ 		</style>
 	</HEAD>
-	<BODY>
-		<A HREF="http://educativegames.net"> klik disini </A> untuk menuju situs EducativeGames.Net. <BR>
-		atau dapat juga mengklik gambar ini :
-		<A HREF="http://educativegames.net">
-		<IMG SRC="images/Raka.png" ALT="educativegames.net"></A>
-		<BR><BR>
-	</BODY>
-</HTML>
+
+	<body>
+	<div class=header>
+	<h1>STMIK Kian Santang</h1>
+	  <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Kontak Kami</a></li>
+      </ul>
+	</div>
+	</body>
+</HTML> 
